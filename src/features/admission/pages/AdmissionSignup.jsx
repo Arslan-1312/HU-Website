@@ -8,7 +8,7 @@ const AdmissionSignup = () => {
             <div className="w-full lg:w-3/5 p-6 md:p-12 flex flex-col items-center">
                 <div className="w-full max-w-lg">
                     <div className="flex flex-col items-center mb-6">
-                        <img src="/assets/logo.png" alt="HU Logo" className="w-14 md:w-16 mb-2" loading="lazy" />
+                        <img src="assets/logo.png" alt="HU Logo" className="w-14 md:w-16 mb-2" loading="lazy" />
                         <h2 className="text-xl font-bold text-green-900 text-center">
                             Hazara University Mansehra<br />Online Admission Portal
                         </h2>
@@ -145,11 +145,11 @@ const AdmissionSignup = () => {
             <div className="w-full lg:w-2/5 bg-green-800 text-white p-8 md:p-12 flex flex-col items-center justify-center relative overflow-hidden">
                 <div className="relative z-10 text-center">
                     {/* Reduced size of logo */}
-                    <img src="/assets/logo.png" alt="HU Big Logo" className="w-32 md:w-48 lg:w-64 drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)]" loading="lazy" />
+                    <img src="assets/logo.png" alt="HU Big Logo" className="w-32 md:w-48 lg:w-64 drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)]" loading="lazy" />
                 </div>
                 {/* Background Pattern - Fixed Scaling */}
                 <div className="absolute inset-0 opacity-5 flex items-center justify-center pointer-events-none">
-                    <img src="/assets/logo.png" alt="BG Pattern" className="w-[100%] scale-150 grayscale" loading="lazy" />
+                    <img src="assets/logo.png" alt="BG Pattern" className="w-[100%] scale-150 grayscale" loading="lazy" />
                 </div>
             </div>
         </div>

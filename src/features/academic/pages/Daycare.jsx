@@ -35,7 +35,7 @@ const Daycare = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div className="rounded-lg overflow-hidden border-4 border-gray-100 shadow-md">
                                 <img
-                                    src="/assets/Slider Image 2.png"
+                                    src="assets/Slider Image 2.png"
                                     alt="Daycare activity"
                                     className="w-full h-64 object-cover"
                                 />

@@ -2,46 +2,46 @@ import { Link, Links } from "react-router-dom";
 
 export const heroSlides = [
     {
-        image: "/assets/Slider image 1.png",
+        image: "assets/Slider image 1.png",
         title: "Excellence in Higher Education",
         description: "Hazara University offers a diverse range of programs designed to foster leadership, innovation, and academic growth.",
     },
     {
-        image: "/assets/Slider Image 2.png",
+        image: "assets/Slider Image 2.png",
         title: "State-of-the-Art Research",
         description: "Our campus provides world-class laboratory facilities and a vibrant research culture for the next generation of scholars.",
     },
     {
-        image: "/assets/Slider Image 4.jpeg",
+        image: "assets/Slider Image 4.jpeg",
         title: "Annual Prize Distribution Ceremony ",
         description: "Participation of Vice Chancellor Hazara University, Prof. Dr. Ikramullah Khan in Annual Prize Distribution Ceremony of Shama Public School and College Abbottabad as a Chief Guest on February 12th, 2026",
     },
     {
-        image: "/assets/Slider Image 3.jpeg",
+        image: "assets/Slider Image 3.jpeg",
         title: "Academic Excellence Amidst the Serene Landscapes",
         description: "A beacon of higher education nestled in the scenic Dhodial region, offering a perfect environment for focused learning.",
     },
     {
-        image: "/assets/Slider Image 5.jpeg",
+        image: "assets/Slider Image 5.jpeg",
         title: "MoU signing ceremony  ",
         description: "MoU signing ceremony between Hazara University and The Smart School College Doraha Campus, Mansehra, was held on March 9, 2026, in the Conference Room of the Vice Chancellor’s Secretariat. ",
     },
     {
-        image: "/assets/Slider Image 6.jpeg",
+        image: "assets/Slider Image 6.jpeg",
         title: "Youth Leadership Convention 2.0 ",
         description: "Hazara University hosted the Youth Leadership Convention 2.0 in collaboration with the Youth Association of Pakistan and the Department of Law on 30–31 December 2025. . ",
     },
     {
-        image: "/assets/Slider Image 7.jpeg",
+        image: "assets/Slider Image 7.jpeg",
         title: "VC Cabinet Meeting ",
         description: "The Vice Chancellor (VC) is meeting with the cabinet to discuss strategic initiatives and policies aimed at enhancing academic quality, research, and overall university performance. Key focus areas include institutional growth and innovation. ",
     },
 ];
 
 export const promoBanners = [
-    { src: "/assets/BAnner 1.png", alt: "University Banner 1" },
-    { src: "/assets/banner 2.png", alt: "University Banner 2" },
-    { src: "/assets/banner 3.png", alt: "University Banner 3" },
+    { src: "assets/BAnner 1.png", alt: "University Banner 1" },
+    { src: "assets/banner 2.png", alt: "University Banner 2" },
+    { src: "assets/banner 3.png", alt: "University Banner 3" },
 ];
 
 export const universityStats = [
@@ -57,7 +57,7 @@ export const inspirationalQuote = {
 };
 
 export const vcMessage = {
-    image: "/assets/VC.png",
+    image: "assets/VC.png",
     paragraphs: [
         "Welcome to Hazara University. A gateway to learning about our dedication to sustainable development, innovation, and community empowerment...",
         "As the Vice Chancellor, I share our mission and achievements since our inception in 2001. We strive for excellence in every academic endeavor..."

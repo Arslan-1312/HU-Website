@@ -25,7 +25,7 @@ const AlumniHome = () => {
 
                         <div className="flex flex-col md:flex-row gap-8 mb-10">
                             <div className="md:w-1/3 shrink-0">
-                                <img src="/assets/banner 3.png" className="w-full rounded-xl shadow-md border-4 border-white" alt="Alumni" loading="lazy" />
+                                <img src="assets/banner 3.png" className="w-full rounded-xl shadow-md border-4 border-white" alt="Alumni" loading="lazy" />
                             </div>
                             <div className="md:w-2/3">
                                 <p className="text-gray-700 leading-relaxed text-justify mb-6 font-medium">

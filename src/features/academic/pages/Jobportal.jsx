@@ -25,7 +25,7 @@ const JobPortal = () => {
           <div className="flex items-center space-x-4">
             {/* Logo Image */}
             <img
-              src="/assets/logo.png"
+              src="assets/logo.png"
               alt="HU Logo"
               className="w-14 h-14 object-contain bg-white rounded-full p-1 shadow-sm"
               loading="lazy"

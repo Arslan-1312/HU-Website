@@ -21,7 +21,7 @@ const DRC = () => {
                             <div className="flex flex-col md:flex-row gap-6">
                                 <div className="md:w-1/3">
                                     <img
-                                        src="/assets/Alumnihome.png"
+                                        src="assets/Alumnihome.png"
                                         alt="DRC Facility"
                                         className="rounded-lg shadow-md w-full h-auto object-cover border border-gray-200"
                                         loading="lazy"

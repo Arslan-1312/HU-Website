@@ -8,7 +8,7 @@ const AdmissionLogin = () => {
             <div className="w-full lg:w-3/5 p-6 md:p-12 flex flex-col items-center justify-center">
                 <div className="w-full max-w-md">
                     <div className="flex flex-col items-center mb-8">
-                        <img src="/assets/logo.png" alt="HU Logo" className="w-16 md:w-20 mb-4" loading="lazy" />
+                        <img src="assets/logo.png" alt="HU Logo" className="w-16 md:w-20 mb-4" loading="lazy" />
                         <h2 className="text-xl md:text-2xl font-bold text-green-900 text-center">
                             Hazara University Mansehra<br />Online Admission Portal
                         </h2>
@@ -76,7 +76,7 @@ const AdmissionLogin = () => {
             <div className="w-full lg:w-2/5 bg-green-800 text-white p-8 md:p-10 flex flex-col items-center justify-center">
                 <div className="max-w-sm text-center">
                     {/* Reduced logo size here */}
-                    <img src="/assets/logo.png" alt="HU Logo Overlay" className="w-24 md:w-32 opacity-90 mx-auto mb-6 drop-shadow-2xl" loading="lazy" />
+                    <img src="assets/logo.png" alt="HU Logo Overlay" className="w-24 md:w-32 opacity-90 mx-auto mb-6 drop-shadow-2xl" loading="lazy" />
 
                     <h2 className="text-2xl md:text-4xl font-bold mb-6 tracking-wider">INSTRUCTIONS</h2>
 

@@ -10,7 +10,7 @@ const AdmissionHeader = ({
                     <div className="flex items-center w-full md:w-auto mb-4 md:mb-0">
                         <div className="w-[80px] mr-4">
                             <img
-                                src="/assets/logo.png"
+                                src="assets/logo.png"
                                 alt="HU Logo"
                                 className="max-h-[80px] w-auto"
                                 loading="lazy"

@@ -13,7 +13,7 @@ const BIC = () => {
                 <div className="lg:w-2/3">
                     <div className="relative mb-10 overflow-hidden rounded-2xl h-[300px] shadow-lg">
                         <img
-                            src="/assets/banner 2.png"
+                            src="assets/banner 2.png"
                             className="w-full h-full object-cover"
                             alt={data.bannerTitle}
                             loading="lazy"

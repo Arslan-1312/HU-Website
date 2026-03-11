@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-   
+  base: '/hu-website/',
   plugins: [react()],
   build: {
     rollupOptions: {
@@ -18,7 +18,7 @@ export default defineConfig({
     chunkSizeWarningLimit: 1000,
     cssCodeSplit: true,
   },
-   server: {
+  server: {
     host: true
   }
 })

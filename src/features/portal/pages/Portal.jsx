@@ -15,7 +15,7 @@ const Portal = () => {
             <div className="container mx-auto px-4 relative z-10">
                 <div className="text-center mb-16">
                     <img
-                        src="/assets/logo.png"
+                        src="assets/logo.png"
                         alt="HU University Logo"
                         className="w-24 h-auto mx-auto mb-6 drop-shadow-sm"
                         loading="lazy"
