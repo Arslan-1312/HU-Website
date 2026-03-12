@@ -88,14 +88,21 @@ const Navbar = () => {
                                                         <li key={i}>
                                                             {typeof item === 'string' ? (
                                                                 <Link to="#" className="block px-4 py-2 hover:bg-green-200 text-[13px]">{item}</Link>
-                                                            ) : item.path ? (
+                                                            ) : item.path && !item.subItems ? (
                                                                 <Link to={item.path} className="block px-4 py-2 hover:bg-green-200 text-[13px]">{item.name}</Link>
                                                             ) : (
                                                                 <div className="relative group/sub">
-                                                                    <button className="flex justify-between w-full px-4 py-2 hover:bg-green-200 text-[13px]">
-                                                                        {item.name}
-                                                                        <i className="fas fa-chevron-right text-[10px]"></i>
-                                                                    </button>
+                                                                    {item.path ? (
+                                                                        <Link to={item.path} className="flex justify-between w-full px-4 py-2 hover:bg-green-200 text-[13px]">
+                                                                            {item.name}
+                                                                            <i className="fas fa-chevron-right text-[10px] mt-1"></i>
+                                                                        </Link>
+                                                                    ) : (
+                                                                        <button className="flex justify-between w-full px-4 py-2 hover:bg-green-200 text-[13px]">
+                                                                            {item.name}
+                                                                            <i className="fas fa-chevron-right text-[10px]"></i>
+                                                                        </button>
+                                                                    )}
 
                                                                     <ul className="hidden group-hover/sub:block absolute left-full top-0 bg-white min-w-[200px] rounded-xl shadow-2xl py-2 border-2 border-gray-300">
                                                                         {item.subItems.map((sub, j) => (
@@ -151,17 +158,35 @@ const Navbar = () => {
                                                         <li key={i} className="ml-0">
                                                             {typeof item === 'string' ? (
                                                                 <Link to="#" className="block px-4 py-2 text-[13px] hover:bg-green-200 hover:text-green-900" onClick={() => setIsOpen(false)}>{item}</Link>
-                                                            ) : item.path ? (
+                                                            ) : item.path && !item.subItems ? (
                                                                 <Link to={item.path} className="block px-4 py-2 text-[13px] hover:bg-green-200 hover:text-green-900" onClick={() => setIsOpen(false)}>{item.name}</Link>
                                                             ) : (
                                                                 <div className="flex flex-col">
-                                                                    <button
-                                                                        onClick={(e) => toggleSubDropdown(e, i)}
-                                                                        className="flex items-center justify-between w-full px-4 py-2 hover:bg-green-200 hover:text-green-900 text-[13px]"
-                                                                    >
-                                                                        {item.name}
-                                                                        <i className={`fas ${activeSubDropdown === i ? 'fa-chevron-down' : 'fa-chevron-right'} text-[10px]`}></i>
-                                                                    </button>
+                                                                    {item.path ? (
+                                                                        <div className="flex justify-between items-center w-full hover:bg-green-200">
+                                                                            <Link 
+                                                                                to={item.path} 
+                                                                                className="flex-grow px-4 py-2 text-[13px] hover:text-green-900"
+                                                                                onClick={() => setIsOpen(false)}
+                                                                            >
+                                                                                {item.name}
+                                                                            </Link>
+                                                                            <button
+                                                                                onClick={(e) => toggleSubDropdown(e, i)}
+                                                                                className="p-2 border-l border-gray-200"
+                                                                            >
+                                                                                <i className={`fas ${activeSubDropdown === i ? 'fa-chevron-down' : 'fa-chevron-right'} text-[10px]`}></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    ) : (
+                                                                        <button
+                                                                            onClick={(e) => toggleSubDropdown(e, i)}
+                                                                            className="flex items-center justify-between w-full px-4 py-2 hover:bg-green-200 hover:text-green-900 text-[13px]"
+                                                                        >
+                                                                            {item.name}
+                                                                            <i className={`fas ${activeSubDropdown === i ? 'fa-chevron-down' : 'fa-chevron-right'} text-[10px]`}></i>
+                                                                        </button>
+                                                                    )}
 
                                                                     {activeSubDropdown === i && (
                                                                         <ul className="bg-gray-50 border-l-4 border-custom-green ml-4">

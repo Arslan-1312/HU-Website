@@ -8,7 +8,7 @@ const HostelFacility = () => {
         <div className="bg-white py-12 font-roboto min-h-screen">
             <div className="container mx-auto px-4 max-w-6xl">
                 <h1 className="text-3xl font-bold text-green-800 mb-2">Hostel Facility</h1>
-                <p className="text-gray-600 mb-8 italic">The University of Haripur has started hostel facility for female students from Fall-2023. The seat will be allotted on first come first serve basis.</p>
+                <p className="text-gray-600 mb-8 italic">Hazara University has started hostel facility for female students from Fall-2023. The seat will be allotted on first come first serve basis.</p>
 
                 <div className="bg-green-800 text-white p-12 rounded-lg mb-12 shadow-2xl relative overflow-hidden border-4 border-green-700">
                     <div className="relative z-10 text-center flex flex-col items-center">
@@ -17,7 +17,7 @@ const HostelFacility = () => {
                             Girl Hostel
                         </div>
                         <p className="text-lg md:text-xl leading-relaxed max-w-4xl mb-8">
-                            The University of Haripur provides modern hostel facilities for female students within the university campus. The hostel includes a mosque, fully furnished rooms, dining area, common room, study room, and a play area. It also offers affordable fees, 24/7 ambulance service, free internet, and proper security. Please note that the university is not responsible for any hostels located outside the campus....
+                            Hazara University provides modern hostel facilities for female students within the university campus. The hostel includes a mosque, fully furnished rooms, dining area, common room, study room, and a play area. It also offers affordable fees, 24/7 ambulance service, free internet, and proper security. Please note that the university is not responsible for any hostels located outside the campus....
                         </p>
                         {/* Adding the Urdu text placeholder for visual matching */}
                         <p className="text-xl md:text-2xl font-bold text-right w-full mt-4 leading-loose" dir="rtl">
@@ -32,7 +32,7 @@ const HostelFacility = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
                     <section>
-                        <h3 className="text-xl font-bold text-gray-800 mb-4 uppercase">Salient Features of Girls Hostel at the University of Haripur:</h3>
+                        <h3 className="text-xl font-bold text-gray-800 mb-4 uppercase">Salient Features of Girls Hostel at Hazara University:</h3>
                         <ul className="list-disc ml-6 space-y-2 text-sm text-gray-700 leading-relaxed">
                             <li>State-of-the-art building/furniture</li>
                             <li>Three-layer security measures</li>

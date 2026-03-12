@@ -5,7 +5,7 @@ const ImportantLinks = () => {
   // Official websites data extracted from the provided image
   const officialWebsites = [
     "Higher Education Commission of Pakistan",
-    "Higher Education Commission Digital Library for UoH",
+    "Higher Education Commission Digital Library for Hazara University",
     "Government of Khyber Pakhtunkhwa Official Website",
     "Government of Pakistan Official Website",
     "Federal Public Service Commission of Pakistan",

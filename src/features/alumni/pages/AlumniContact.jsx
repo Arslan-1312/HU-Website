@@ -71,7 +71,7 @@ const AlumniContact = () => {
                     {/* Footer Contact Details */}
                     <div className="mt-10 pt-6 border-t border-gray-100 text-sm text-gray-600 space-y-1">
                         <p>You can also contact us on the following Contact Details:</p>
-                        <p className="font-medium">University Advancement Cell , University of Haripur Hattar Road KPK Pakistan.</p>
+                        <p className="font-medium">University Advancement Cell, Hazara University Dhodial Mansehra, KPK Pakistan.</p>
                         <p>• Email: <span className="text-primary-green italic">alumni@hu.edu.pk</span></p>
                         <p>• Tel # +92-995-2442333</p>
                     </div>

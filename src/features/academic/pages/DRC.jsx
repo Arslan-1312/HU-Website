@@ -29,7 +29,7 @@ const DRC = () => {
                                 </div>
                                 <div className="md:w-2/3">
                                     <p className="leading-relaxed text-justify text-gray-800">
-                                        The Disability Resource Centre (DRC-UOH) is serving as a facilitation center at The University of Haripur, Khyber-Pakhtunkhwa in accordance with HEC Policy for Students with disabilities 2021, to provide necessary academic, financial, and professional development resources to promote inclusiveness, opportunities and learning quality.
+                                        The Disability Resource Centre (DRC-HU) is serving as a facilitation center at Hazara University, Khyber-Pakhtunkhwa in accordance with HEC Policy for Students with disabilities 2021, to provide necessary academic, financial, and professional development resources to promote inclusiveness, opportunities and learning quality.
                                     </p>
                                 </div>
                             </div>

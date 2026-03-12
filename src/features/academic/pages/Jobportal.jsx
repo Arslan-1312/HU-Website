@@ -124,7 +124,7 @@ const JobPortal = () => {
           <div className="text-sm text-gray-700 space-y-3">
             <p>Complete Advertisement can also be downloaded from following link:</p>
             <p className="text-blue-600 underline cursor-pointer">Download Advertisement</p>
-            <p>Hazara University is looking for potential candidates with soundtrack records for the following discipline as Lecturer on visiting basis for Semester Spring-2026 extendable on satisfactory performance. The Demonstration/Interview will be conducted at the University of Haripur as per given schedule.</p>
+            <p>Hazara University is looking for potential candidates with soundtrack records for the following discipline as Lecturer on visiting basis for Semester Spring-2026 extendable on satisfactory performance. The Demonstration/Interview will be conducted at Hazara University as per given schedule.</p>
 
             <p className="font-bold uppercase">Requirements:</p>
             <ol className="list-decimal ml-6 space-y-2">

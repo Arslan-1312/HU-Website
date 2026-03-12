@@ -21,7 +21,7 @@ const Daycare = () => {
                         <div className="text-gray-800">
                             <h3 className="text-xl font-bold text-green-800 mb-3">Introduction</h3>
                             <p className="leading-relaxed text-justify mb-4">
-                                The Day Care Centre at the University of Haripur, established in February 2020, provides a safe, nurturing, and developmentally appropriate environment for young children of faculty, staff, and students. It plays a vital role in enabling parents to focus on their academic, professional, and research commitments with confidence and peace of mind.
+                                The Day Care Centre at Hazara University, established in February 2020, provides a safe, nurturing, and developmentally appropriate environment for young children of faculty, staff, and students. It plays a vital role in enabling parents to focus on their academic, professional, and research commitments with confidence and peace of mind.
                             </p>
                             <p className="leading-relaxed text-justify mb-4">
                                 In line with the University's vision and mission, the Centre's primary objective is to foster a family-friendly campus and promote a healthy work-life balance. It is dedicated to delivering high-quality early childhood care and education through well-trained staff, engaging learning activities, and a secure setting that supports children's social, emotional, and cognitive growth.

@@ -19,7 +19,7 @@ const ORIC = () => {
               <h4 className="font-bold text-gray-700 mb-2">Mission</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-700 ml-2">
                 <li>Restoring hope through knowledge transfer and building community through technology commercialization.</li>
-                <li>Promote need based research in UoH and disseminating it to masses.</li>
+                <li>Promote need based research in Hazara University and disseminating it to masses.</li>
                 <li>Formulate collaborative ventures by strengthening university-industry linkages.</li>
                 <li>Strengthening research through knowledge sharing, trainings and curricula development.</li>
                 <li>Promote entrepreneurship by providing applied and practical knowledge.</li>

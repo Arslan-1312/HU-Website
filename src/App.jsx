@@ -26,6 +26,9 @@ import ImportantLinks from './features/academic/pages/ImportantLinks';
 import Daycare from './features/academic/pages/Daycare';
 import DRC from './features/academic/pages/DRC';
 import Library from './features/academic/pages/Library';
+import CSIT from './features/academic/pages/departments/CS&IT/CS&IT';
+import DepartmentDetail from './features/academic/pages/departments/CS&IT/DepartmentDetail';
+import HODMessage from './features/academic/pages/departments/CS&IT/HODMessage';
 
 // Admission Pages
 import AdmissionHome from './features/admission/pages/AdmissionHome';
@@ -86,6 +89,9 @@ function App() {
           <Route path="/Library" element={<Library />} />
           <Route path="/OnlineResult" element={<OnlineResult />} />
           <Route path="/OnlineResult/ShowResult" element={<ShowResult />} />
+          <Route path="/department/:id" element={<CSIT />} />
+          <Route path="/department/:id/details" element={<DepartmentDetail />} />
+          <Route path="/department/:id/hod-message" element={<HODMessage />} />
         </Route>
 
         {/* Admission Portal Routes */}

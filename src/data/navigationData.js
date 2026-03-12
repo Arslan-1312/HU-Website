@@ -12,8 +12,9 @@ export const mainNavLinks = [
         dropdown: [
             {
                 name: 'Faculty of Natural & Computational Sciences',
+              
                 subItems: [
-                    { name: 'Computer Science and Information Technology', path: '/admissions' },
+                    { name: 'Computer Science and Information Technology', path: '/department/cs-it' },
                     { name: 'Telecommunication', path: '/admissions' },
                     { name: 'Physics', path: '/admissions' },
                     { name: 'Chemistry', path: '/admissions' },
