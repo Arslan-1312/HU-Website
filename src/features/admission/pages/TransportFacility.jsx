@@ -1,5 +1,5 @@
 import React from 'react';
-import { transportRoutes as importedRoutes } from '../../../data/admissionData';
+import { transportRoutes as importedRoutes } from '../data/admissionData';
 
 const TransportFacility = () => {
     const transportRoutes = importedRoutes;

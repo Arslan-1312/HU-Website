@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { eligibilitySections } from '../../../data/admissionData';
+import { eligibilitySections } from '../data/admissionData';
 
 const AdmissionEligibility = React.memo(() => {
     // Defaulting to 'bs-programs' to match the open accordion style

@@ -20,7 +20,7 @@ const QuickActions = () => {
         },
         {
             icon: "fas fa-laptop",
-            title: "HU Portals",
+            title: "HU CMS Portals",
             bgColor: "bg-red-600",
             path: "/portal" // Direct navigation to the new Portal page
         },

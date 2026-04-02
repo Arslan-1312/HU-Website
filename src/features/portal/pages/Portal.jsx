@@ -1,5 +1,6 @@
 import React from 'react';
 import PortalCard from '../../../components/PortalCard';
+import logo from '../../admission/assets/logo.png';
 
 /**
  * Portal Page
@@ -15,12 +16,12 @@ const Portal = () => {
             <div className="container mx-auto px-4 relative z-10">
                 <div className="text-center mb-16">
                     <img
-                        src="assets/logo.png"
+                        src={logo}
                         alt="HU University Logo"
                         className="w-24 h-auto mx-auto mb-6 drop-shadow-sm"
                         loading="lazy"
                     />
-                    <h2 className="text-3xl md:text-4xl font-extrabold text-primary-green uppercase tracking-wider mb-4">
+                    <h2 className="text-3xl md:text-4xl font-extrabold text-primary-green uppercase tracking-wider mb-4 transition-all duration-300 [text-shadow:0_0_18px_rgba(34,197,94,0.8)]">
                         HU CAMPUS MANAGEMENT SYSTEM PORTALS
                     </h2>
                     <div className="w-24 h-1.5 bg-custom-green mx-auto rounded-full"></div>
@@ -46,13 +47,7 @@ const Portal = () => {
                     />
                 </div>
 
-                <div className="mt-20 text-center animate-pulse">
-                    <div className="inline-block px-6 py-2 bg-primary-green/10 rounded-full border border-primary-green/20">
-                        <p className="text-primary-green font-bold text-sm tracking-widest uppercase">
-                            Providing Modern Digital Services Since 2001
-                        </p>
-                    </div>
-                </div>
+
             </div>
         </div>
     );

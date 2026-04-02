@@ -44,6 +44,18 @@ import FeeStructure from './features/admission/pages/FeeStructure';
 import HostelFacility from './features/admission/pages/HostelFacility';
 import TransportFacility from './features/admission/pages/TransportFacility';
 import HowToApply from './features/admission/pages/HowToApply';
+import MeritList from './features/admission/pages/MeritList';
+import GeneralMeritList from './features/admission/pages/GeneralMeritList';
+import ProvisionalMeritList from './features/admission/pages/ProvisionalMeritList';
+import GeneralBSMeritList from './features/admission/pages/GeneralBSMeritList';
+import GeneralMSPHilMeritList from './features/admission/pages/GeneralMSPHilMeritList';
+import GeneralPHDMeritList from './features/admission/pages/GeneralPHDMeritList';
+import ProvisionalBSMeritList from './features/admission/pages/ProvisionalBSMeritList';
+import ProvisionalMSPHilMeritList from './features/admission/pages/ProvisionalMSPHilMeritList';
+import ProvisionalPHDMeritList from './features/admission/pages/ProvisionalPHDMeritList';
+
+
+
 
 // Portal & Other Pages
 import FacultyProfile from './features/portal/FacultyProfile';
@@ -107,7 +119,19 @@ function App() {
           <Route path="/admissions/AdmissionPolicy" element={<AdmissionPolicy />} />
           <Route path="/admissions/FeeStructure" element={<FeeStructure />} />
           <Route path="/admissions/AdmissionFAQs" element={<AdmissionFAQs />} />
+          <Route path="/admissions/merit-list" element={<MeritList />} />
+          <Route path="/admissions/merit-list/general" element={<GeneralMeritList />} />
+          <Route path="/admissions/merit-list/provisional" element={<ProvisionalMeritList />} />
+          <Route path="/admissions/merit-list/general/bs" element={<GeneralBSMeritList />} />
+          <Route path="/admissions/merit-list/general/ms" element={<GeneralMSPHilMeritList />} />
+          <Route path="/admissions/merit-list/general/phd" element={<GeneralPHDMeritList />} />
+          <Route path="/admissions/merit-list/provisional/bs" element={<ProvisionalBSMeritList />} />
+          <Route path="/admissions/merit-list/provisional/ms" element={<ProvisionalMSPHilMeritList />} />
+          <Route path="/admissions/merit-list/provisional/phd" element={<ProvisionalPHDMeritList />} />
+
+
         </Route>
+
 
         {/* Specialized Portal Routes */}
         <Route element={<PortalLayout />}>

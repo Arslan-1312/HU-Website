@@ -19,6 +19,15 @@ export default defineConfig({
     cssCodeSplit: true,
   },
   server: {
-    host: true
+    host: true,
+    proxy: {
+      // Security Layer: Route all /api requests to an actual backend server
+      // This prevents the frontend code from exposing backend secrets/endpoints to the public.
+      '/api': {
+        target: 'http://localhost:5000', // Example: replace with actual backend API URL
+        changeOrigin: true,
+        secure: false,
+      }
+    }
   }
 })

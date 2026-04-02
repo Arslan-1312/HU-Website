@@ -1,5 +1,5 @@
 import React from 'react';
-import { paperCompositionTable } from '../../../data/admissionData';
+import { paperCompositionTable } from '../data/admissionData';
 
 const EntryTestDetails = () => {
     const paperComposition = paperCompositionTable;

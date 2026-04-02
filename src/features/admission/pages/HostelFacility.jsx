@@ -1,5 +1,6 @@
 import React from 'react';
-import { hostelData } from '../../../data/admissionData';
+import { hostelData } from '../data/admissionData';
+import logo from '../assets/logo.png';
 
 const HostelFacility = () => {
     const documents = hostelData.documents;
@@ -26,7 +27,7 @@ const HostelFacility = () => {
                     </div>
                     {/* Background Logo Overlay */}
                     <div className="absolute inset-0 opacity-10 flex items-center justify-center pointer-events-none">
-                        <img src="assets/logo.png" alt="Overlay" className="w-[50%] grayscale invert scale-125" loading="lazy" />
+                        <img src={logo} alt="Overlay" className="w-[50%] grayscale invert scale-125" loading="lazy" />
                     </div>
                 </div>
 

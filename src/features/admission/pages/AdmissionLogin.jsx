@@ -1,14 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../assets/logo.png';
 
 const AdmissionLogin = () => {
     return (
-        <div className="flex flex-col lg:flex-row min-h-screen lg:min-h-[600px] bg-[#f0f9eb]">
+        /* Changed flex-col to flex-col-reverse for mobile priority */
+        <div className="flex flex-col-reverse lg:flex-row min-h-screen lg:min-h-[600px] bg-[#f0f9eb]">
             {/* Left Side: Login Form */}
             <div className="w-full lg:w-3/5 p-6 md:p-12 flex flex-col items-center justify-center">
                 <div className="w-full max-w-md">
                     <div className="flex flex-col items-center mb-8">
-                        <img src="assets/logo.png" alt="HU Logo" className="w-16 md:w-20 mb-4" loading="lazy" />
+                        <img src={logo} alt="HU Logo" className="w-16 md:w-20 mb-4" loading="lazy" />
                         <h2 className="text-xl md:text-2xl font-bold text-green-900 text-center">
                             Hazara University Mansehra<br />Online Admission Portal
                         </h2>
@@ -28,16 +30,16 @@ const AdmissionLogin = () => {
                     <form className="space-y-4">
                         <div>
                             <label className="block text-sm font-bold text-gray-700 mb-1">
-                                CNIC <span className="text-red-500">*</span>
-                                <span className="ml-4 font-normal text-green-700">Passport *</span>
+                                Login ID <span className="text-red-500">*</span>
+                                
                             </label>
                             <input
                                 type="text"
-                                placeholder="Username (CNIC)"
+                                placeholder="User(Login ID)"
                                 className="w-full p-3 border border-gray-300 rounded focus:border-green-500 focus:ring-1 focus:ring-green-500 outline-none transition-all"
                             />
                             <p className="text-[10px] text-right text-gray-500 mt-1">
-                                CNIC Number Format XXXXX-XXXXXXX-X
+                                Login ID 
                             </p>
                         </div>
 
@@ -72,20 +74,19 @@ const AdmissionLogin = () => {
                 </div>
             </div>
 
-            {/* Right Side: Instructions - Reduced width and logo size */}
+            {/* Right Side: Instructions - This will now appear at the top on mobile */}
             <div className="w-full lg:w-2/5 bg-green-800 text-white p-8 md:p-10 flex flex-col items-center justify-center">
                 <div className="max-w-sm text-center">
-                    {/* Reduced logo size here */}
-                    <img src="assets/logo.png" alt="HU Logo Overlay" className="w-24 md:w-32 opacity-90 mx-auto mb-6 drop-shadow-2xl" loading="lazy" />
+                    <img src={logo} alt="HU Logo Overlay" className="w-24 md:w-32 opacity-90 mx-auto mb-6 drop-shadow-2xl" loading="lazy" />
 
                     <h2 className="text-2xl md:text-4xl font-bold mb-6 tracking-wider">INSTRUCTIONS</h2>
 
                     <div className="space-y-4 text-sm md:text-base leading-relaxed text-left md:text-justify">
                         <p>
-                            For new applicants, click on <span className="font-bold ">Create a New Account/Signup</span> and fill out the form.
+                            For new applicants, click on <Link to="/admissions/signup" className="font-bold ">Create a New Account/Signup</Link> and fill out the form.
                         </p>
                         <p>
-                            Applicants who already created an account then log in through CNIC and password.
+                            Applicants who already created an account then log in through Login ID and password.
                         </p>
                         <p>
                             If you forgot your password, click on Forgot Password and fill out the form. You will receive a code through your registered email; enter that code in the box and reset your password.

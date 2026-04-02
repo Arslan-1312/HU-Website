@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../../admission/assets/logo.png';
 
 const EmployeeLogin = () => {
     return (
@@ -9,7 +10,7 @@ const EmployeeLogin = () => {
                 <div className="bg-[#06402b] py-2  flex items-center justify-center gap-5 ">
                     <div className="shrink-0">
                         <img
-                            src="../../../../../assets/logo.png"
+                            src={logo}
                             alt="Hazara University Logo"
                             className="h-24 w-auto drop-shadow-lg" // Increased from h-16 to h-24
                             loading="lazy"

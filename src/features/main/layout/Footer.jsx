@@ -39,7 +39,7 @@ const Footer = () => {
                         <h3 className="text-2xl font-medium mb-6">Address</h3>
                         <div className="text-[15px] space-y-1">
                             <p className="font-bold">The Hazara University</p>
-                            <p>Dodaila Mansehra</p>
+                            <p>Dhodial Mansehra</p>
                             <p>Khyber Pakhtunkhwa Pakistan</p>
                             <p className="mt-4 font-bold">Registrar Office</p>
                             <p>Phone: +92-111 232345</p>

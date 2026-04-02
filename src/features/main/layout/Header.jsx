@@ -38,7 +38,7 @@ const Header = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/portal" className="text-white no-underline flex items-center">
+                                <Link to="/portal" className="text-[#FFD700] font-bold no-underline flex items-center transition-all animate-pulse">
                                     <i className="fas fa-graduation-cap mr-2 w-4 text-center"></i> HU CMS Portals
                                 </Link>
                             </li>

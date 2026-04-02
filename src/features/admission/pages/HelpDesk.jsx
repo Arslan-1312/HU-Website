@@ -1,5 +1,5 @@
 import React from 'react';
-import { focalPersonsList } from '../../../data/admissionData';
+import { focalPersonsList } from '../data/admissionData';
 
 const HelpDesk = () => {
     const focalPersons = focalPersonsList;
