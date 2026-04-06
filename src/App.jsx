@@ -29,6 +29,11 @@ import Library from './features/academic/pages/Library';
 import CSIT from './features/academic/pages/departments/CS&IT/CS&IT';
 import DepartmentDetail from './features/academic/pages/departments/CS&IT/DepartmentDetail';
 import HODMessage from './features/academic/pages/departments/CS&IT/HODMessage';
+import VisionMission from './features/academic/pages/departments/CS&IT/VisionMission';
+import IndustryAdvisoryBoard from './features/academic/pages/departments/CS&IT/IndustryAdvisoryBoard';
+import MoUs from './features/academic/pages/departments/CS&IT/MoUs';
+import Faculty from './features/academic/pages/departments/CS&IT/Faculty';
+import FacultyDetail from './features/academic/pages/departments/CS&IT/FacultyDetail';
 
 // Admission Pages
 import AdmissionHome from './features/admission/pages/AdmissionHome';
@@ -104,6 +109,11 @@ function App() {
           <Route path="/department/:id" element={<CSIT />} />
           <Route path="/department/:id/details" element={<DepartmentDetail />} />
           <Route path="/department/:id/hod-message" element={<HODMessage />} />
+          <Route path="/department/:id/vision-mission" element={<VisionMission />} />
+          <Route path="/department/:id/industry-advisory-board" element={<IndustryAdvisoryBoard />} />
+          <Route path="/department/:id/mous" element={<MoUs />} />
+          <Route path="/department/:id/faculty" element={<Faculty />} />
+          <Route path="/department/:id/faculty/:facultyId" element={<FacultyDetail />} />
         </Route>
 
         {/* Admission Portal Routes */}

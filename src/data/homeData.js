@@ -11,6 +11,11 @@ export const heroSlides = [
         title: "State-of-the-Art Research",
         description: "Our campus provides world-class laboratory facilities and a vibrant research culture for the next generation of scholars.",
     },
+     {
+        image: "assets/Slider image 8.png",
+        title: "Vice Chancellor Honors Dean for Academic Excellence CS & IT Department ",
+        description: "In a prestigious ceremony held at Hazara University, Mansehra, the Worthy Vice Chancellor presented an Award of Appreciation to Dr. Sajjad Ahmad (Dean, CS & IT Department). ",
+    },
     {
         image: "assets/Slider Image 4.jpeg",
         title: "Annual Prize Distribution Ceremony ",
@@ -75,6 +80,11 @@ export const importantHighlights = [
 ];
 
 export const newsEvents = [
+    { month: "NOV", day: "12", text: "Hazara University wins the Grand Innovation Challenge organized by HEC Islamabad..." },
+    { month: "NOV", day: "09", text: "Inauguration ceremony of the newly built state-of-the-art Research Laboratory at the main campus..." },
+    { month: "NOV", day: "05", text: "International Conference on Sustainable Technologies set to be hosted by HU next week..." },
+    { month: "NOV", day: "01", text: "Vice Chancellor meets with the Federal Education Minister to discuss funding and developmental projects..." },
+    { month: "OCT", day: "28", text: "Department of Management Sciences wraps up its 3-day extensive entrepreneurship bootcamp..." },
     { month: "OCT", day: "24", text: "Final match of Intervarsity Zone C Volleyball Championship was played between Abdul Wali Khan University Mardan..." },
     { month: "OCT", day: "20", text: "Visit of Honorable Vice Chancellor Hazara University Prof. Dr. Ikramullah Khan to the site..." },
     { month: "OCT", day: "15", text: "Hazara University announces the commencement of Fall Semester examinations from next month..." },

@@ -12,7 +12,7 @@ export const departmentData = {
             { label: 'Students', count: 1092, suffix: '', icon: 'fas fa-user-graduate' },
             { label: 'Academic Programs', count: 3, suffix: '', icon: 'fas fa-book' },
             { label: 'Faculty Members', count: 50, suffix: '', icon: 'fas fa-chalkboard-teacher' }
-            
+
         ],
         newsEvents: {
             title: 'News & Events',
@@ -39,7 +39,9 @@ export const departmentData = {
         },
         announcements: {
             title: 'Announcements',
-            items: [] // Empty to show "No Announcement Found"
+              image: '/assets/csit-announcement.jpeg', // This image renders right below the title in the sidebar
+            items: [] 
+          
         },
         sliderImages: [
             {
@@ -50,6 +52,7 @@ export const departmentData = {
                 url: 'https://images.pexels.com/photos/256541/pexels-photo-256541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
                 caption: 'Computer Lab'
             }
+
         ],
         importantLinks: {
             title: 'Important Links',
@@ -58,23 +61,19 @@ export const departmentData = {
                     { name: "HOD's Message", link: '/department/cs-it/hod-message' },
                     { name: 'BS (Computer Science)', link: '#' },
                     { name: 'BS (Software Engineering)', link: '#' },
-                    { name: 'Masters (Computer Science)', link: '#' },
                     { name: 'MS (Computer Science)', link: '#' },
-                    { name: 'Program Offered & Goals', link: '#' },
+                    { name: 'Vision & Mission', link: '/department/cs-it/vision-mission' },
                     { name: 'Industry Linkages', link: '#' },
-                    { name: 'Laboratories', link: '#' },
-                    { name: 'Other Downloads', link: '#' }
+                    { name: 'Labs', link: '#' }
                 ],
                 [
                     { name: 'BS (Artificial Intelligence)', link: '#' },
-                    { name: 'BS (Data Science)', link: '#' },
-                    { name: 'BS (Telecom & Networks)', link: '#' },
                     { name: 'Ph.D Computer Science', link: '#' },
-                    { name: 'MOUs', link: '#' },
-                    { name: 'Industry Advisory Board', link: '#' },
-                    { name: 'IT Department MS-PhD Program Proforma', link: '#' },
+                    { name: 'MOUs', link: '/department/cs-it/mous' },
+                    { name: 'Industry Advisory Board', link: '/department/cs-it/industry-advisory-board' },
+                    { name: ' MS,PhD Program Proforma', link: '#' },
                     { name: 'Quality Assurance Agency, HEC', link: '#' },
-                    { name: 'BS (Cyber Security)', link: '#' }
+                    { name: 'Faculty', link: '/department/cs-it/faculty' },
                 ]
             ]
         }

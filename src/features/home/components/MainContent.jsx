@@ -71,7 +71,7 @@ const MainContent = () => {
                     <div className="bg-gradient-to-b from-[#2e9046] to-primary-green text-white font-bold p-4 uppercase text-center tracking-wider">
                         Important Highlights
                     </div>
-                    <div className="p-1 px-4 bg-gray-50/50 h-full">
+                    <div className="p-1 px-4 bg-gray-50/50">
                         <ul className="divide-y divide-gray-200">
                             {importantHighlights.map((item, i) => (
                                 <li key={i} className="py-3 px-2 transition-colors hover:bg-white rounded group">
@@ -92,29 +92,29 @@ const MainContent = () => {
                 <div className="bg-white rounded shadow-sm overflow-hidden border border-gray-200">
                     <div className="bg-primary-green text-white font-bold p-3 uppercase flex justify-between items-center text-sm tracking-wider z-10 relative">
                         <span>News & Events</span>
-                        <a href="#" className="text-[10px] font-normal bg-white/20 px-2 py-1 rounded hover:bg-white/30 transition-colors no-underline">VIEW ALL</a>
+                        <a href="#" className="text-[10px] font-normal bg-white/20 px-2 py-1 rounded hover:bg-white/30 transition-colors no-underline text-white">VIEW ALL</a>
                     </div>
 
                     {/* SCROLLING CONTAINER */}
-                    <div className="relative h-[320px] overflow-hidden bg-gray-50/50 group">
+                    <div className="relative h-[360px] overflow-hidden bg-gray-50/50 group">
                         <style>
                             {`
-                @keyframes scrollNews {
-                    0% { transform: translateY(0); }
-                    100% { transform: translateY(-50%); }
-                }
-                .animate-news-scroll {
-                    animation: scrollNews 25s linear infinite;
-                }
-                .animate-news-scroll:hover {
-                    animation-play-state: paused;
-                }
-            `}
+                            @keyframes scrollNews {
+                                0% { top: 100%; transform: translateY(0); }
+                                100% { top: 0; transform: translateY(-100%); }
+                            }
+                            .animate-news-scroll {
+                                animation: scrollNews 25s linear infinite;
+                            }
+                            .animate-news-scroll:hover {
+                                animation-play-state: paused;
+                            }
+                            `}
                         </style>
 
-                        <div className="p-4 animate-news-scroll">
+                        <div className="absolute w-full p-4 animate-news-scroll">
                             <ul className="space-y-4">
-                                {newsEvents.concat(newsEvents).map((item, i) => (
+                                {newsEvents.map((item, i) => (
                                     <li key={i} className="border-b border-dashed border-gray-200 pb-4 last:border-0">
                                         <a href="#" className="no-underline flex gap-3 group/item items-start">
 

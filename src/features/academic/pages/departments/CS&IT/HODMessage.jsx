@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { departmentData } from '../../../../../data/departmentData';
+import { departmentData } from './departmentData';
 import { NewsEventsSidebar, AnnouncementsSidebar } from '../../../components/DepartmentSidebars';
 
 const HODMessage = () => {

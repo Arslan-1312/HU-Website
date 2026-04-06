@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { departmentData } from '../../../../../data/departmentData';
+import { departmentData } from './departmentData';
 import { NewsEventsSidebar, AnnouncementsSidebar, ImportantLinksSidebar } from '../../../components/DepartmentSidebars';
 
 const CSIT = () => {
@@ -38,19 +38,21 @@ const CSIT = () => {
                             <h2 className="text-xl font-semibold">{dept.introduction.title}</h2>
                         </div>
                         <div className="p-4 flex flex-col flex-grow">
-                            <div className="flex flex-col md:flex-row gap-4 mb-4">
+                            {/* Inner container changed to block for text wrapping */}
+                            <div className="block mb-4 overflow-hidden">
                                 <img 
                                     src={dept.introduction.image.startsWith('/') ? dept.introduction.image.substring(1) : dept.introduction.image} 
                                     alt="Intro" 
-                                    className="w-full md:w-1/2 h-40 object-cover rounded shadow-sm border border-gray-100"
+                                    className="w-full md:w-1/2 h-40 object-cover rounded shadow-sm border border-gray-100 float-left mr-4 mb-2"
                                 />
-                                <div className="text-sm text-gray-700 leading-relaxed md:w-1/2">
+                                {/* Text alignment set to justify and original text logic restored */}
+                                <div className="text-sm text-gray-700 leading-relaxed text-justify">
                                     <p className="mb-2">Welcome to the {dept.name} at Hazara University!</p>
                                     <p>{dept.introduction.content.substring(0, 160) + '...'}</p>
                                 </div>
                             </div>
                             <div className="mt-auto flex justify-between items-center">
-                                <span className="text-gray-500 text-xs italic">Our .....</span>
+                                <span className="text-gray-500 text-xs italic"></span>
                                 <Link 
                                     to={dept.introduction.readMoreLink}
                                     className="bg-custom-green hover:opacity-90 text-white px-4 py-2 rounded text-sm font-medium transition-colors"

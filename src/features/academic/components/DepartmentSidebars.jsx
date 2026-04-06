@@ -5,19 +5,19 @@ export const NewsEventsSidebar = ({ newsEvents }) => {
     if (!newsEvents) return null;
     
     return (
-        <div className="bg-white rounded overflow-hidden border border-gray-200 shadow-sm flex flex-col">
-            <div className="bg-primary-green text-white font-bold p-3 uppercase flex justify-between items-center text-sm tracking-wider z-10 relative">
+        /* Fixed height h-[450px] ensures the container never expands or pushes content below it */
+        <div className="bg-white rounded overflow-hidden border border-gray-200 shadow-sm flex flex-col h-[450px] w-full">
+            <div className="bg-primary-green text-white font-bold p-3 uppercase flex justify-between items-center text-sm tracking-wider z-10 relative flex-shrink-0">
                 <span>{newsEvents.title || "News & Events"}</span>
                 <Link to="#" className="text-[10px] font-normal bg-white/20 px-2 py-1 rounded hover:bg-white/30 transition-colors no-underline text-white">VIEW ALL</Link>
             </div>
 
-            {/* Fixed: Changed h-[320px] to max-h-[320px] so it shrinks if content is small */}
-            <div className="relative max-h-[320px] overflow-hidden bg-gray-50/50 group">
+            <div className="relative flex-1 overflow-hidden bg-gray-50/50 group">
                 <style>
                     {`
                     @keyframes scrollDeptNews {
-                        0% { transform: translateY(0); }
-                        100% { transform: translateY(-50%); }
+                        0% { top: 100%; transform: translateY(0); }
+                        100% { top: 0; transform: translateY(-100%); }
                     }
                     .animate-dept-news-scroll {
                         animation: scrollDeptNews 25s linear infinite;
@@ -28,9 +28,9 @@ export const NewsEventsSidebar = ({ newsEvents }) => {
                     `}
                 </style>
 
-                <div className="p-4 animate-dept-news-scroll">
+                <div className="absolute w-full p-4 animate-dept-news-scroll">
                     <ul className="space-y-4">
-                        {(newsEvents.items.concat(newsEvents.items)).map((item, i) => {
+                        {newsEvents.items.map((item, i) => {
                             const parts = item.date ? item.date.split(' ') : ['Jan', '01'];
                             const month = parts[0];
                             const day = parts[1] ? parts[1].replace(',', '') : '01';
@@ -73,31 +73,42 @@ export const NewsEventsSidebar = ({ newsEvents }) => {
 export const AnnouncementsSidebar = ({ announcements }) => {
     if (!announcements) return null;
     return (
-        /* Fixed: Removed h-full so the card ends where the list ends */
         <div className="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100 transition-all hover:shadow-md flex flex-col">
             <div className="bg-gradient-to-b from-[#2e9046] to-primary-green text-white font-bold p-4 uppercase text-center tracking-wider text-sm">
                 {announcements.title || "Important Announcements"}
             </div>
-            {/* Fixed: Removed flex-grow */}
-            <div className="p-1 px-4 bg-gray-50/50">
-                <ul className="divide-y divide-gray-200">
-                    {announcements.items.length > 0 ? (
-                        announcements.items.map((item, i) => (
-                            <li key={i} className="py-3 px-2 transition-colors hover:bg-white rounded group">
-                                <Link
-                                    to={item.link || "#"}
-                                    className="flex items-start text-xs font-semibold text-gray-600 group-hover:text-primary-green no-underline"
-                                >
-                                    <i className="fas fa-angle-right mt-0.5 mr-3 text-nav-green"></i>
-                                    <span className="underline decoration-gray-300 group-hover:decoration-primary-green">{item.title}</span>
-                                </Link>
-                            </li>
-                        ))
-                    ) : (
-                        <li className="py-3 px-2 text-xs italic text-gray-400">No Announcement Found</li>
-                    )}
-                </ul>
-            </div>
+            
+            {announcements.image && (
+                <div className="w-full flex flex-col">
+                    <img 
+                        src={announcements.image.startsWith('/') ? announcements.image.substring(1) : announcements.image} 
+                        alt="Announcement Overview" 
+                        className="w-full h-auto object-cover border-b border-gray-100"
+                    />
+                </div>
+            )}
+
+            {(announcements.items?.length > 0 || !announcements.image) && (
+                <div className="p-1 px-4 bg-gray-50/50 mt-1">
+                    <ul className="divide-y divide-gray-200">
+                        {announcements.items?.length > 0 ? (
+                            announcements.items.map((item, i) => (
+                                <li key={i} className="py-3 px-2 transition-colors hover:bg-white rounded group">
+                                    <Link
+                                        to={item.link || "#"}
+                                        className="flex items-start text-xs font-semibold text-gray-600 group-hover:text-primary-green no-underline"
+                                    >
+                                        <i className="fas fa-angle-right mt-0.5 mr-3 text-nav-green"></i>
+                                        <span className="underline decoration-gray-300 group-hover:decoration-primary-green">{item.title}</span>
+                                    </Link>
+                                </li>
+                            ))
+                        ) : (
+                            <li className="py-3 px-2 text-xs italic text-gray-400">No Announcement Found</li>
+                        )}
+                    </ul>
+                </div>
+            )}
         </div>
     );
 };
@@ -105,7 +116,6 @@ export const AnnouncementsSidebar = ({ announcements }) => {
 export const ImportantLinksSidebar = ({ importantLinks }) => {
     if (!importantLinks) return null;
     return (
-        /* Fixed: Removed h-full */
         <div className="bg-white rounded-3xl shadow-sm border border-gray-200 p-6 transition-all hover:shadow-md">
             <h2 className="text-xl font-semibold text-primary-green mb-6 border-b pb-2 italic">{importantLinks.title}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
