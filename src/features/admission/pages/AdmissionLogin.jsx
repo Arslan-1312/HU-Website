@@ -1,11 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import logo from '../assets/logo.png';
 
 const AdmissionLogin = () => {
+    const navigate = useNavigate();
+
     return (
         /* Changed flex-col to flex-col-reverse for mobile priority */
-        <div className="flex flex-col-reverse lg:flex-row min-h-screen lg:min-h-[600px] bg-[#f0f9eb]">
+        <div className="flex flex-col-reverse lg:flex-row min-h-screen lg:min-h-[600px] bg-[#f0f9eb] relative">
+            <button
+                onClick={() => navigate(-1)}
+                className="absolute top-4 left-4 bg-[#1A5C3D] text-white px-4 py-2 rounded shadow hover:bg-green-700 transition z-20"
+            >
+                &larr; Back
+            </button>
             {/* Left Side: Login Form */}
             <div className="w-full lg:w-3/5 p-6 md:p-12 flex flex-col items-center justify-center">
                 <div className="w-full max-w-md">

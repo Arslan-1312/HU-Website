@@ -1,5 +1,5 @@
 import React from 'react';
-import { Outlet, useLocation } from 'react-router-dom';
+import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 import PortalHeader from './PortalHeader';
 import PortalNavbar from './PortalNavbar';
 import PortalFooter from './PortalFooter';
@@ -12,6 +12,7 @@ import PortalFooter from './PortalFooter';
  */
 const PortalLayout = () => {
     const location = useLocation();
+    const navigate = useNavigate();
 
     // Configuration based on path
     const isAlumni = location.pathname.startsWith('/alumni');
@@ -26,6 +27,16 @@ const PortalLayout = () => {
         <div className="bg-[#f0f9eb] min-h-screen font-roboto">
             <PortalHeader portalName={portalName} />
             <PortalNavbar links={links} />
+            
+            <div className="container mx-auto px-4 mt-4">
+                <button 
+                    onClick={() => navigate(-1)} 
+                    className="bg-[#1A5C3D] text-white px-4 py-2 rounded shadow hover:bg-green-700 transition"
+                >
+                    &larr; Back
+                </button>
+            </div>
+
             <main>
                 <Outlet />
             </main>
